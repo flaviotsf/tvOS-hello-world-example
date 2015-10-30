@@ -1,0 +1,24 @@
+{
+  "name": "tv-os-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "browserify": "./node_modules/.bin/browserify js/index.js -t reactify --outfile public/bundle.js",
+    "build": "npm run browserify; npm run serve",
+    "serve": "./node_modules/.bin/serve . --port 9001"
+  },
+  "author": "Shawn Price",
+  "license": "MIT",
+  "dependencies": {
+    "raf": "^3.1.0",
+    "random-string": "^0.1.2",
+    "react": "^0.14.1",
+    "react-tvml": "git://github.com/sprice/react-tvml.git#dev"
+  },
+  "devDependencies": {
+    "reactify": "^1.1.1",
+    "serve": "^1.4.0"
+  }
+}

@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         // Override point for customization after application launch.
         self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
         let appControllerContext = TVApplicationControllerContext()
-        let javascriptURL = NSURL(string: "http://localhost:9001/js/application.js")
+        let javascriptURL = NSURL(string: "http://localhost:9001/public/bundle.js")
         appControllerContext.javaScriptApplicationURL = javascriptURL!
         
         if let options = launchOptions
